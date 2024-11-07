@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: gray;
+}
+#mybutton {
+  padding: 4rem;
+  background-color: black;
+  color: white;
+}
+#mylabel {
+  font-size: 5rem;
+}

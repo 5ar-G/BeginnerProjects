@@ -1,0 +1,29 @@
+body {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  font-size: 2rem;
+  font-weight: bold;
+
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+}
+button {
+  font-size: 2rem;
+}
+#textbox {
+  font-size: 2rem;
+}
+h1 {
+  text-decoration: underline;
+  color: blue;
+}
+button:hover {
+  background-color: red;
+  box-shadow: 0px 0px 5px white;
+}

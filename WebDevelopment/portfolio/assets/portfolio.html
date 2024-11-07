@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1>Logo</h1>
+      <ul>
+        <li>
+          <a href="#home"><ion-icon name="home-outline"></ion-icon> Home</a>
+        </li>
+        <li>
+          <a href="#about"><ion-icon name="person-outline"></ion-icon> About</a>
+        </li>
+        <li>
+          <a href="#projects"
+            ><ion-icon name="briefcase-outline"></ion-icon> Projects</a
+          >
+        </li>
+        <li>
+          <a href="#contact"
+            ><ion-icon name="chatbubbles-outline"></ion-icon> Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+    <section>
+      <div class="page" id="home">
+        <div>
+          <h3>Hello my name is <span>Petar Glavaš</span></h3>
+          <p>
+            I am laerning to become software developer. Curently I have
+            knowledge in HTML, CSS and JavaScript. As for the languages, I speak
+            Croatian and English.
+            <br />
+            <br />
+            <span class="warning"
+              >Warning:This site doesn't work well on lower resolutions</span
+            >
+            <br />
+            <span class="learning">I'm still learning ;)</span>
+          </p>
+
+          <button onclick="window.location.href='#about'">Learn more</button>
+        </div>
+        <img src="images/profile-icon.svg" alt="profile-icon" />
+      </div>
+      <div class="page" id="about">
+        <section class="info-about">
+          <h3>About me</h3>
+          <h4>I'm <span></span></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            sit dicta tenetur architecto sint id accusantium labore impedit
+            quidem omnis. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Placeat non vitae quae dolore obcaecati laudantium
+            perspiciatis praesentium ipsa libero enim. In, cum laborum qui
+            quidem, veniam illum sequi explicabo voluptate consequatur odit
+            veritatis minima sapiente animi dolorum. Cum cupiditate nemo,
+            adipisci obcaecati quas voluptatum maiores! Est voluptatum, illo
+            ipsum magnam vel repellendus totam in architecto! Non aliquam ea
+            recusandae sint, cupiditate eum? Officiis dolorem porro laborum
+            reprehenderit, eaque tempore maxime itaque est. Sed blanditiis
+            maxime esse dolorem provident saepe molestiae!
+          </p>
+          <div class="lists">
+            <ul>
+              <li>Born: <span>12th of April 2006</span></li>
+              <li>Age: <span>18</span></li>
+              <li>Country: <span>Bosnia and Herzegovina</span></li>
+              <li>City: <span>Čapljina</span></li>
+            </ul>
+            <ul>
+              <li>Curent job: <span>Student</span></li>
+              <li>Email: <span>5ar_G006@proton.me</span></li>
+              <li>Phone number: <span>+387 63 813 912</span></li>
+            </ul>
+          </div>
+        </section>
+        <button onclick="window.location.href='#projects'">
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="page" id="projects">
+        <h3>Projects</h3>
+        <div class="projects-window">
+          <div class="map">
+            <div class="window window1">
+              <div class="bottom">
+                <p>Calculator</p>
+                <button
+                  onclick="window.location.href='projects/calculator/index.html'"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+            <div class="window window2">
+              <div class="bottom">
+                <p>Temp converter</p>
+                <button
+                  onclick="window.location.href='projects/temp. converter/index.html'"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+            <div class="window window3">
+              <div class="bottom">
+                <p>Guessing game</p>
+                <button
+                  onclick="window.location.href='projects/guessing game/index.html'"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <div class="window window4">
+              <div class="bottom">
+                <p>Saying obvious</p>
+                <button
+                  onclick="window.location.href='projects/saying obvious/index.html'"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+            <div class="window window5">
+              <div class="bottom">
+                <p>Age checker</p>
+                <button
+                  onclick="window.location.href='projects/Age checker/index.html'"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+            <div class="window window6">
+              <div class="bottom">
+                <p>Random number</p>
+                <button
+                  onclick="window.location.href='projects/random number/index.html'"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <div class="window window7">
+              <div class="bottom">
+                <p>Counting</p>
+                <button
+                  onclick="window.location.href='projects/counting/index.html'"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+            <div class="window window8">
+              <div class="bottom">
+                <p>Working on it</p>
+                <button>Preview</button>
+              </div>
+            </div>
+            <div class="window window9">
+              <div class="bottom">
+                <p>Working on it</p>
+                <button>Preview</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="contact">
+        <div class="contact-div">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="bed3c52c-fb16-4cf5-be1b-ba6ebb639720"
+            />
+            <h3>Send me a message</h3>
+            <input
+              class="input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="input"
+              name="message"
+              placeholder="Your message"
+            ></textarea>
+            <button type="submit">
+              <img src="images/mouse-click.svg" alt="icon" />Submit
+            </button>
+          </form>
+        </div>
+        <div class="contact-window">
+          <h3>Contact me</h3>
+          <p>
+            I will read all of your emails.<br /><br />
+            All I need is your <span>Name</span> and <span>Email Address.</span
+            ><br />
+            <br />
+            Or you can find me here
+          </p>
+        </div>
+        <div class="other">
+          <img src="images/curved-arrow.svg" alt="" />
+          <a href="https://www.instagram.com/5ar_glavas/"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

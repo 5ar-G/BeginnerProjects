@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 22rem;
+}
+body {
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  padding: 30px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h2 {
+  font-size: 2.5rem;
+}
+main {
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 15px 115px 15px 10px;
+  margin-top: 2rem;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.616);
+  font-size: 1rem;
+  font-style: italic;
+}
+label {
+  margin-top: 1rem;
+}
+label a {
+  text-underline-offset: 3px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+button {
+  margin-top: 1rem;
+  padding: 8px 100px 8px 100px;
+  border: 3px solid black;
+  background-color: aquamarine;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: normal;
+}
+button:hover {
+  opacity: 0.7;
+}
+p {
+  margin: 1.5rem 0 1.5rem 0;
+  color: white;
+  font-size: large;
+}
+p a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  text-underline-offset: 3px;
+}

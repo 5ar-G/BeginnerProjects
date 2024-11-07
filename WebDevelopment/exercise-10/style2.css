@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(27, 27, 27);
+  animation: zoomIn 0.6s ease-in forwards;
+}
+.holder {
+  top: 150px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateY(105deg);
+}
+.holder .item {
+  position: absolute;
+  height: 800px;
+  width: 600px;
+  background-color: wheat;
+  border: 5px solid black;
+  transform: rotateY(
+      calc((var(--position) - 1) * (180 / var(--quantity)) * 1deg)
+    )
+    translateZ(1200px);
+}
+h2 {
+  transform: rotateY(180deg);
+  font-size: 2rem;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

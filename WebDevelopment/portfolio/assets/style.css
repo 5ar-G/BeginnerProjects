@@ -1,0 +1,788 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(15, 15, 15);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(45, 45, 45);
+  border-radius: 20px;
+}
+
+/*sidebar*/
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  float: left;
+  border-right: 1px solid rgb(0, 0, 0);
+  background-color: rgb(35, 35, 35);
+  min-height: 100vh;
+  width: 15%;
+  z-index: 10;
+  user-select: none;
+  font-family: "Urbanist", sans-serif;
+}
+
+/*Main page*/
+
+.page {
+  float: right;
+  width: 85%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(5, 5, 5),
+    rgba(20, 20, 20) 30%,
+    rgba(15, 15, 15)
+  );
+  min-height: 100vh;
+  color: white;
+}
+
+/*add new logo later!!*/
+
+.sidebar h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: -5rem;
+  color: white;
+}
+.sidebar h1:hover {
+  cursor: default;
+}
+.sidebar h1::before {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-bottom: 8px solid orangered;
+  border-left: 8px solid orangered;
+  transform: translateX(-20px) translateY(30px);
+}
+.sidebar h1::after {
+  content: "";
+  position: absolute;
+  height: 4.7rem;
+  width: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-top: 5px solid orangered;
+  border-right: 5px solid orangered;
+  transform: translateX(-20px) translateY(-30px);
+}
+.sidebar ul {
+  text-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -10rem;
+}
+.sidebar ul li {
+  list-style: none;
+  padding: 2rem 8.5rem;
+}
+.sidebar a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+.sidebar a::before {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+  transform: translateX(-40px) translateY(45px);
+  border-bottom: 5px solid rgb(255, 255, 255);
+  border-left: 5px solid rgb(255, 255, 255);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar a::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+  transform: translateX(-10px) translateY(-30px);
+  border-top: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar a:hover::before {
+  transform: translateX(-20px) translateY(25px);
+  border-bottom: 5px solid orangered;
+  border-left: 5px solid orangered;
+  opacity: 1;
+}
+
+.sidebar a:hover::after {
+  transform: translateX(-30px) translateY(-10px);
+  border-top: 5px solid orangered;
+  border-right: 5px solid orangered;
+  opacity: 1;
+}
+
+/*Home page*/
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Urbanist", sans-serif;
+  user-select: none;
+}
+#home div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10rem;
+  margin-left: 5rem;
+}
+#home div h3 {
+  font-size: 4rem;
+}
+#home div h3 span {
+  font-family: "Clicker Script", cursive;
+  color: orangered;
+  font-size: 4.3rem;
+}
+#home div p {
+  font-size: 1.5rem;
+}
+#home .warning {
+  font-size: 1.3rem;
+  color: rgb(65, 65, 65);
+}
+#home .learning {
+  font-size: 1rem;
+  color: rgb(65, 65, 65);
+}
+#home img {
+  width: 25rem;
+  height: 25rem;
+  margin-right: 10rem;
+  user-select: none;
+}
+#home button {
+  position: relative;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 50px;
+  background-color: orangered;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+  font-weight: bold;
+  border: 5px solid transparent;
+}
+#home button::before {
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  border-bottom: 6px solid rgb(0, 0, 0);
+  border-left: 6px solid rgb(0, 0, 0);
+  transform: translateX(-40px) translateY(25px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#home button::after {
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  border-top: 6px solid rgb(0, 0, 0);
+  border-right: 6px solid rgb(0, 0, 0);
+  transform: translateX(20px) translateY(-25px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#home button:hover {
+  background-color: white;
+  border-radius: 0;
+  border: 5px solid orangered;
+  cursor: pointer;
+  color: orangered;
+}
+#home button:hover:before {
+  opacity: 1;
+  transform: translateX(-15px) translateY(10px);
+}
+#home button:hover:after {
+  opacity: 1;
+  transform: translateX(-20px) translateY(-10px);
+}
+
+/*About page*/
+#about {
+  background-image: linear-gradient(
+    to top right,
+    rgb(15, 15, 15),
+    rgba(20, 20, 20) 30%,
+    rgba(5, 5, 5)
+  );
+  /*later change border to something like png line */
+  border-top: 5px solid orangered;
+  font-family: "Urbanist", sans-serif;
+}
+#about .info-about {
+  display: flex;
+  flex-direction: column;
+  text-align: flex-start;
+  justify-content: space-around;
+  gap: 5rem;
+  margin-left: 5rem;
+  margin-right: 10rem;
+}
+
+#about .info-about h3 {
+  font-size: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 3.5rem;
+  user-select: none;
+}
+#about .info-about h3::before {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  transform: translateX(0px);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: solid 5px orangered;
+}
+#about .info-about h3::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  transform: translateX(-283px);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: solid 5px orangered;
+}
+#about .info-about h4 {
+  font-size: 2.5rem;
+  display: inline-block;
+  min-width: 22rem;
+  user-select: none;
+}
+#about .info-about h4 span {
+  position: relative;
+  font-size: 3rem;
+  color: orangered;
+  user-select: none;
+  letter-spacing: 5px;
+}
+#about .info-about h4 span::before {
+  content: " Student";
+  animation: words 20s infinite;
+}
+#about .info-about h4 span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  border-left: 3px solid #ff7f50;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(13) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid #00000000;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "Student";
+  }
+  21%,
+  40% {
+    content: "Athlete";
+  }
+  41%,
+  60% {
+    content: "Programer";
+  }
+  61%,
+  80% {
+    content: "Free for hire";
+  }
+  81%,
+  100% {
+    content: "Human?";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+#about .info-about p {
+  font-size: 1.5rem;
+  user-select: none;
+}
+#about .lists {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+#about .lists ul {
+  list-style: none;
+  font-size: 1.5rem;
+}
+#about .lists ul li {
+  font-weight: bolder;
+  border-bottom: 1px solid gray;
+  line-height: 3rem;
+  letter-spacing: 2px;
+}
+#about .lists ul li span {
+  font-weight: lighter;
+}
+#about button {
+  position: absolute;
+  float: right;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 50px;
+  background-color: orangered;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+  font-weight: bold;
+  border: 5px solid transparent;
+  margin-left: 75rem;
+  margin-top: -9rem;
+}
+#about button::before {
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  border-bottom: 6px solid rgb(0, 0, 0);
+  border-left: 6px solid rgb(0, 0, 0);
+  transform: translateX(-40px) translateY(25px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#about button::after {
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  border-top: 6px solid rgb(0, 0, 0);
+  border-right: 6px solid rgb(0, 0, 0);
+  transform: translateX(20px) translateY(-25px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#about button:hover {
+  background-color: white;
+  border-radius: 0;
+  border: 5px solid orangered;
+  cursor: pointer;
+  color: orangered;
+}
+#about button:hover:before {
+  opacity: 1;
+  transform: translateX(-15px) translateY(10px);
+}
+#about button:hover:after {
+  opacity: 1;
+  transform: translateX(-20px) translateY(-10px);
+}
+
+/*Projects page*/
+
+#projects {
+  background-image: linear-gradient(
+    to top,
+    rgb(15, 15, 15),
+    rgba(20, 20, 20) 30%,
+    rgba(5, 5, 5)
+  );
+  border-top: 5px solid orangered;
+}
+
+#projects h3 {
+  font-size: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 3.5rem;
+  user-select: none;
+  font-family: "Urbanist", sans-serif;
+  margin-left: 5rem;
+}
+#projects h3::before {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  transform: translateX(0px);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: solid 5px orangered;
+}
+#projects h3::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  transform: translateX(-225px);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: solid 5px orangered;
+}
+.projects-window {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5rem 5rem 0 5rem;
+  background-color: rgb(15, 15, 15);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(40, 40, 40);
+  height: 42rem;
+  width: 90%;
+  overflow-y: scroll;
+}
+.projects-window .map {
+  display: flex;
+  align-items: center;
+  margin: 5rem 0 5rem 0;
+  gap: 5rem;
+}
+.projects-window .map .window {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: rgb(30, 30, 30);
+  box-shadow: 0px 0px 10px rgba(20, 20, 20);
+  border-radius: 20px;
+  width: 20rem;
+  height: 15rem;
+}
+.projects-window .map .window .bottom {
+  background-color: rgba(50, 50, 50, 0.8);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(10px);
+}
+.projects-window .map .window:hover .bottom {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.projects-window .map .window .bottom p {
+  font-size: 2rem;
+  font-family: "Urbanist", sans-serif;
+}
+.projects-window .map .window .bottom button {
+  font-size: 1.3rem;
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  background-color: rgb(35, 35, 35);
+  border: none;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: 3px solid orangered;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 rgb(25, 25, 25), 0 15px 40px rgb(70, 70, 70);
+  transition: all 0.2s ease;
+}
+.projects-window .map .window .bottom button:hover {
+  box-shadow: 3px 3px 0 rgb(25, 25, 25), 0 8px 20px rgb(70, 70, 70);
+  transform: translateX(2px) translateY(2px);
+}
+.projects-window .map .window .bottom button:active {
+  box-shadow: 0px 0px 0 rgb(25, 25, 25);
+  transform: translateX(3px) translateY(3px);
+}
+.window1 {
+  background-image: url(images/counting.png);
+  background-repeat: no-repeat;
+}
+.window2 {
+  background-image: url(images/temp-convert.png);
+  background-repeat: no-repeat;
+}
+.window3 {
+  background-image: url(images/guessing-game.png);
+  background-repeat: no-repeat;
+}
+.window4 {
+  background-image: url(images/obvius.png);
+  background-repeat: no-repeat;
+}
+.window5 {
+  background-image: url(images/age.png);
+  background-repeat: no-repeat;
+}
+.window6 {
+  background-image: url(images/random.png);
+  background-repeat: no-repeat;
+}
+.window7 {
+  background-image: url(images/counting.png);
+  background-repeat: no-repeat;
+}
+
+/*contact page*/
+
+#contact {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(15, 15, 15),
+    rgba(20, 20, 20),
+    rgba(5, 5, 5) 80%
+  );
+  border-top: 5px solid orangered;
+}
+.contact-div {
+  display: flex;
+  height: 40rem;
+  width: 40rem;
+  padding-left: 5rem;
+  transform: translateX(150px);
+  background-color: rgb(35, 35, 35);
+  float: right;
+  z-index: 1;
+  margin-top: 10rem;
+  margin-right: 10rem;
+  border-radius: 15px;
+  animation: apear-from-right linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+  user-select: none;
+  box-shadow: 0px 0px 15px rgb(50, 50, 50);
+}
+@keyframes apear-from-right {
+  form {
+    transform: translateX(150px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.contact-div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.contact-div h3 {
+  font-size: 2.5rem;
+  font-family: "Urbanist", sans-serif;
+}
+.contact-div h3::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 68, 0, 0);
+  width: 8rem;
+  height: 2rem;
+  border-bottom: 5px solid orangered;
+  transform: translateX(0.1rem) translateY(1rem);
+}
+.contact-div input {
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  width: 25rem;
+  border: 3px solid gray;
+  color: white;
+  background-color: rgb(35, 35, 35);
+  font-family: "Urbanist", sans-serif;
+}
+.contact-div textarea {
+  height: 10rem;
+  width: 30rem;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  resize: none;
+  color: white;
+  border: 3px solid gray;
+  background-color: rgb(35, 35, 35);
+  font-family: "Urbanist", sans-serif;
+}
+.contact-div button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(35, 35, 35);
+  border: 3px solid orangered;
+  font-family: "Urbanist", sans-serif;
+  cursor: pointer;
+  box-shadow: 15px 15px 0 rgb(25, 25, 25), 0 15px 40px rgb(70, 70, 70);
+  transition: all 0.2s ease;
+}
+.contact-div button:hover {
+  box-shadow: 8px 8px 0 rgb(25, 25, 25), 0 8px 20px rgb(70, 70, 70);
+  transform: translateX(7px) translateY(7px);
+}
+.contact-div button:active {
+  box-shadow: 5px 5px 0 rgb(25, 25, 25);
+  transform: translateX(10px) translateY(10px);
+}
+
+.contact-window {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  background-color: rgb(35, 35, 35);
+  font-family: "Urbanist", sans-serif;
+  border-bottom: 5px solid orangered;
+  border-top: 3px solid gray;
+  border-right: 3px solid gray;
+  border-left: 3px solid gray;
+  float: left;
+  margin-top: 15rem;
+  margin-left: 15rem;
+  z-index: 2;
+  border-radius: 15px;
+  animation: apear-from-left linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+@keyframes apear-from-left {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.contact-window h3 {
+  font-size: 3.5rem;
+  margin-left: -5rem;
+}
+
+.contact-window h3::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 68, 0, 0.5);
+  width: 5rem;
+  height: 3rem;
+  transform: translateX(-4rem) translateY(1rem);
+}
+.contact-window p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.contact-window p span {
+  font-weight: bolder;
+}
+#contact .other {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-left: 15rem;
+  padding-top: 35rem;
+}
+#contact .other img {
+  position: absolute;
+  transform: rotateZ(100deg);
+  height: 300px;
+  width: 300px;
+  float: left;
+  margin-top: -1rem;
+  user-select: none;
+}
+#contact .other a {
+  text-decoration: none;
+  width: 50px;
+  color: gray;
+  font-size: 3rem;
+  float: left;
+  margin-top: 5rem;
+  margin-left: 7rem;
+  transition: all 0.5s ease;
+}
+#contact .other a:hover {
+  color: orangered;
+}

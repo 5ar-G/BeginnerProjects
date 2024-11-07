@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  margin-top: 10rem;
+  background-color: gray;
+}
+#mylabel {
+  font-size: 8rem;
+}
+#increase {
+  padding: 1rem 5rem;
+  background-color: blue;
+  color: white;
+}
+#decrease {
+  padding: 1rem 5rem;
+  background-color: blue;
+  color: white;
+}
+#reset {
+  padding: 1rem 5rem;
+  background-color: blue;
+  color: white;
+}

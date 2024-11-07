@@ -1,0 +1,301 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    border-bottom: 2px solid red;
+}
+.page{
+   
+}
+.footer{
+  
+}
+.column{
+    /*border: 1px solid black;*/
+    width: 1000px;
+    margin: 0px auto;
+}
+.page .column{
+    height: 100vh;
+}
+#logo-social{
+    display: flex;
+}
+#logo-holder{
+    flex-grow: 1;
+}
+#logo-holder img{
+    width: 70px;
+    height: 70px;
+}
+#social-holder{
+    flex-grow: 1;
+    text-align: right;
+}
+#social-holder a{
+    text-decoration: none;
+}
+#social-holder a img{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+#Main-menu{
+    display: flex;
+}
+#Main-menu a{
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: red;
+    transition: 400ms;
+}
+#Main-menu a:hover,
+#Main-menu a.active{
+    color: white;
+    background: red;
+}
+#pocetna{
+    text-align: center;
+    color: white;
+    background-color: antiquewhite;
+    background-image: url(file:///C:/Users/petar/OneDrive/Documents/vjezba/assets/img/backgrounds/StockCake-Rural.jpg);
+    background-size: cover;
+}
+#pocetna h1{
+    font-size: 40pt;
+    margin-top: 0px;
+    padding-top: 15vh;
+    color: black;
+}
+.dark-box{
+    background-color: rgba(0, 0, 0, 0.35);
+    border: solid 1px white;
+    font-size: 24pt;
+    padding: 40px;
+}
+.align-center{
+    text-align: center;
+}
+.krugovi{
+    display: flex;
+}
+.krug-holder{
+    flex-grow: 1;
+}
+.krug{
+    background: red;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 25%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.oznaka{ 
+    margin-top: 32px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tehnologije{
+    display: flex;
+}
+.tehnologija{
+    flex-grow: 1;
+    text-align: center;
+}
+.tehnologija img{
+    width: 48px;
+    height: 48px;
+}
+.tehnologija p{
+    font-weight: bold;
+}
+.margina-gore-dole{
+    margin: 60px 0;
+    font-size: large;
+}
+#O-nama h2{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+}
+#Usluge{
+    background-image: url(file:///C:/Users/petar/OneDrive/Documents/vjezba/assets/img/backgrounds/pedro-lastra.jpg);
+    background-size: cover;
+    border: 1px solid black;
+    color: white;
+}
+#Usluge p{
+    font-weight: bold;
+}
+h3{
+    font-size: 50px;
+    margin-top: 210px;
+    text-decoration: underline;
+}
+.usluga img{
+    height: 200px;
+    width: 300px;
+}
+.service-row{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.service-row>div{
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+.service-row>div>img{
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+.service-row>div>p{
+    position: absolute;
+    width: 279px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.774);
+    border: 1px solid white;
+}
+#proizvodi h4{
+    padding-top: 50px;
+}
+#imgA{
+    width: 312.45px;
+    height: 244px;
+}
+#imgB{
+    width: 312.45px;
+    height: 488px;
+}
+#imgC{
+    width: 313.33px;
+    height: 244px;
+}
+#imgD{
+    width: 312,45px;
+    height: 244px;
+}
+#imgE{
+    width: 313.33px;
+    height: 244px;
+}
+#imgF{
+    width: 655.78px;
+    height: 244px;
+}
+#imgG{
+    width: 312.33px;
+    height: 244px;
+}
+.proizvod{
+    display: grid;
+    grid-template: region;
+    justify-content: stretch;
+    align-content: stretch;
+}
+.proizvod img{
+    grid-area: region;
+    justify-self: stretch;
+    align-self: stretch;
+    width: 300px;
+    height: 300px;
+}
+
+
+.grid-proizvodi{
+    margin-top: 40px;
+    height: 500px;
+    display: grid;
+    grid-template: "a b c"
+                   "d b e"
+                   "f f g";
+    align-content: space-between;
+    justify-content: space-between;
+}
+#pr-A{
+    grid-area: a;
+}
+#pr-B{
+    grid-area: b;
+}
+#pr-C{
+    grid-area: c;
+}
+#pr-D{
+    grid-area: d;
+}
+#pr-E{
+    grid-area: e;
+}
+#pr-F{
+    grid-area: f;
+}
+#pr-G{
+    grid-area: g;
+}
+#kontakt h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.kontakt-region{
+    display: grid;
+    grid-template: "adrese mapa"
+                   "mail   mapa";
+    grid-template-columns: 300px 1fr;
+}
+.kontakt-adrese{
+    padding-bottom: 15px;
+    grid-area: "adrese";
+}
+.kontakt-mail{
+    background-image: url(file:///C:/Users/petar/OneDrive/Documents/vjezba/assets/img/kontakt/Untitled.png);
+    background-size: cover;
+    grid-area: "mail";
+}
+.kontakt-mapa{
+    grid-area: "mapa";
+}
+.footer{
+    margin: 0px 0px;
+    display: flex;
+    border-top: 1px solid red;
+    background-color: rgb(110, 122, 122);
+}
+
+.footer .foot{
+    padding-top: 20px;
+    padding-bottom: 50PX;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.align-right{
+    text-align: right;
+}
+.align-left{
+    text-align: left;
+}
+.footer .foot a{
+    text-decoration: none;
+}

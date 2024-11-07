@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  height: 12vh;
+}
+.logo {
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-left: 4rem;
+  cursor: default;
+  transition: all 1s ease;
+}
+.logo:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  margin-right: 10rem;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 1s ease;
+  padding: 10px 20px;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(camera.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-size: 8rem;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  transition: all 1s ease;
+}
+h1:hover {
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+.buttons {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+.button1 {
+  padding: 20px 35px;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.692);
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: all 0.7s ease;
+  font-weight: bold;
+}
+.button2 {
+  padding: 20px 35px;
+  color: black;
+  font-size: 1.5rem;
+  background-color: white(0, 0, 0, 0.356);
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: all 0.7s ease;
+  font-weight: bold;
+}
+.button1:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-color: black;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+.button2:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.274);
+  border-color: white;
+}

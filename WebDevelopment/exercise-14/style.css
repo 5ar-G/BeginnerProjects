@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+}
+.box {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+.box input {
+  width: 0;
+  height: 2rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  transition: 1s;
+  font-size: 1rem;
+}
+.box:hover input {
+  width: 20rem;
+}
+img {
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  color: aqua;
+}

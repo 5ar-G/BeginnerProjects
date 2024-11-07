@@ -1,0 +1,98 @@
+.ID {
+  border-radius: 15px;
+  font-family: sans-serif, Calibri;
+  display: grid;
+  width: 490px;
+  height: 300px;
+  padding: 4px 8px;
+  border: 2px solid black;
+  grid-template:
+    "sg bp rep rep rep"
+    "sg bp lk  lk  lk "
+    "fo fo pre pre cg"
+    "fo fo ime ime cg"
+    "fo fo dr  dr  cg"
+    "fo fo pol reg ss"
+    "fo fo diz diz ss"
+    "fo fo dva dva ss"
+    "di di di  di  po";
+  grid-template-columns: 80px 80px 100px 100px 130px;
+  grid-template-rows: 30px 30px 35px 35px 35px 35px 35px 35px 30px;
+}
+.sg {
+  grid-area: sg;
+  align-self: center;
+  justify-self: center;
+}
+.rep {
+  grid-area: rep;
+  align-self: center;
+}
+.lk {
+  grid-area: lk;
+  align-self: center;
+}
+.fo {
+  grid-area: fo;
+  align-self: center;
+  justify-self: center;
+}
+.pre {
+  grid-area: pre;
+  align-self: center;
+}
+.ime {
+  grid-area: ime;
+  align-self: center;
+}
+.cg {
+  grid-area: cg;
+  align-self: end;
+  justify-self: center;
+}
+.dr {
+  grid-area: dr;
+}
+.pol {
+  grid-area: pol;
+  align-self: center;
+}
+.reg {
+  grid-area: reg;
+  align-self: center;
+}
+.ss {
+  grid-area: ss;
+  align-self: center;
+  justify-self: center;
+}
+.diz {
+  grid-area: diz;
+  align-self: center;
+}
+.dva {
+  grid-area: dva;
+  align-self: center;
+}
+.di {
+  grid-area: di;
+  align-self: center;
+}
+.po {
+  grid-area: po;
+  align-self: center;
+  justify-self: center;
+}
+
+.velika-slova {
+  font-size: 18px;
+  font-weight: bold;
+  color: brown;
+  line-height: 14px;
+}
+.mala-slova {
+  font-size: 13px;
+  font-style: italic;
+  color: grey;
+  line-height: 9px;
+}

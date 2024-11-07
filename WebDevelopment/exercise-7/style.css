@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(10, 7, 20);
+  gap: 20rem;
+}
+.card-1 {
+  position: relative;
+
+  width: 20rem;
+  text-align: center;
+  background-color: rgb(43, 42, 42);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+h2 {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+p {
+  margin-top: 1rem;
+}
+.card-1 ::after,
+.card-1 ::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-image: conic-gradient(red, blue, orange, rgb(0, 255, 64), red);
+  z-index: -1;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.card-1 ::before {
+  filter: blur(0.5rem);
+}
+
+/*card 2*/
+
+.card-2 {
+  position: relative;
+  height: rem;
+  width: 20rem;
+  text-align: center;
+  background-color: rgb(43, 42, 42);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.card-2 ::after,
+.card-2 ::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-image: conic-gradient(
+    from var(--angle),
+    red,
+    green,
+    blue,
+    orange,
+    aqua,
+    red
+  );
+  z-index: -1;
+  padding: 0.5rem;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card-2 ::before {
+  filter: blur(0.5rem);
+}
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}

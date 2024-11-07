@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 37, 37);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.card {
+  position: relative;
+  height: 30rem;
+  width: 25rem;
+  background-color: white;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: all 0.3s linear;
+  box-shadow: -5px 8px 2px rgb(100, 99, 99), 5px -8px 2px rgb(66, 66, 66);
+}
+.card ::after,
+.card::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: brown;
+  z-index: -1;
+  padding: 2rem;
+  border-radius: 5rem;
+}
+.card:hover {
+  transform: translateX(90px);
+}

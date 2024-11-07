@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  perspective: 1000px;
+  background-color: blue;
+  perspective: 100rem;
+  transform-style: preserve-3d;
+  animation: rotate-cube 20s infinite linear;
+}
+@keyframes rotate-cube {
+  0% {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  25% {
+    transform: rotateX(-45deg) rotateY(45deg);
+  }
+  50% {
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  75% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(58, 57, 57);
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.one {
+  transform: translateZ(250px);
+}
+.two {
+  transform: translateY(250px) rotateX(90deg);
+}
+.three {
+  transform: translateY(-250px) rotateX(-90deg);
+}
+.four {
+  transform: translateX(250px) rotateY(-90deg);
+}
+.five {
+  transform: translateX(-250px) rotateY(90deg);
+}
+.six {
+  transform: translateZ(-250px);
+}
