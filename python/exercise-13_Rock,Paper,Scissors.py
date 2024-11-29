@@ -32,7 +32,7 @@ while running:
         print("Player wins!")
         print("-------------------------")
     else:
-        print("Player loses")
+        print("Player loses!")
         print("-------------------------")
     
     if not input("PLAY AGAIN?(y/n):").lower() == "y":

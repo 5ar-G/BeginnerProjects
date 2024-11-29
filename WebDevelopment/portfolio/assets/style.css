@@ -510,7 +510,7 @@
   margin: 5rem 5rem 0 5rem;
   background-color: rgb(15, 15, 15);
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(40, 40, 40);
+  box-shadow: 0px 0px 40px rgba(40, 40, 40);
   height: 42rem;
   width: 90%;
   overflow-y: scroll;
@@ -526,10 +526,14 @@
   justify-content: flex-end;
   flex-direction: column;
   background-color: rgb(30, 30, 30);
-  box-shadow: 0px 0px 10px rgba(20, 20, 20);
+  box-shadow: 0px 0px 20px rgba(10, 10, 10);
   border-radius: 20px;
   width: 20rem;
   height: 15rem;
+  transition: all linear;
+}
+.projects-window .map .window:hover {
+  box-shadow: 0px 0px 35px rgba(30, 30, 30);
 }
 .projects-window .map .window .bottom {
   background-color: rgba(50, 50, 50, 0.8);

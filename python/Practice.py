@@ -1,8 +1,11 @@
-capitals = {"Hrvatska": 10000.980,
-            "Srbija": 1,
-            "Bosna i Hercegovina": 2}
+class CAR:
+    def __init__(self, model, year, miles, for_sale):
 
+        self.model =model
+        self.year = year
+        self.miles = miles
+        self.for_sale = for_sale
 
-#print(capitals.get("Hrvatska"))
-
-print(capitals.get("Srbija"))
+car1 = CAR("BMW",2020, 120000, True)
+        
+print(car1.model)
