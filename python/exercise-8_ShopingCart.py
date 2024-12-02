@@ -1,15 +1,27 @@
 foods = []
 prices = []
 total = 0
+def is_number(value):
+    try:
+        float(value)  
+        return True   
+    except ValueError:
+        return False
 
 while True:
-    food = input(f"Enter a food to buy (Q to quit): ")
+    food = input("Enter a food to buy(Q to quit): ")
     if food.upper() == "Q":
         break
     else:
-        price = float(input(f"Enter te price of a {food}: $"))
-        foods.append(food)
-        prices.append(price)
+        price = input(f"Enter the price of {food}: $")
+        
+        if is_number(price):
+            price = float(price)
+            foods.append(food)
+            prices.append(price)
+        else:
+            print("Invalid price. PLEASE TRY AGAIN!")
+            exit()
 
 print("-----YOUR CART-----")
 
