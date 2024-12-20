@@ -1,6 +1,6 @@
 *Step 1
 
-Install Ollama by downloading ollama from: https://ollama.com/
+Install Ollama from ollama.com
 --------------------------------------
 *Step 2
 

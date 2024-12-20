@@ -2,7 +2,7 @@
 
 int main(){
     std::string questions[]= {"What are you?","What is your name?","How old are you?","Where were you born?"};
-    std::string options[][3]= {{"A: Man", "B: Woman", "C: Dog, Cat, ext.."},
+    std::string options[][3]= {{"A: Man", "B: Woman", "C:AI"},
                                 {"A: Petar", "B: Josip", "C: Luka"},
                                 {"A: <18", "B: 18", "C: >18"},
                                 {"A: RH", "B: RS", "C: B&H"}};

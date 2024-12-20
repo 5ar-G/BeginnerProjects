@@ -13,7 +13,7 @@ def is_float(value):
 
 def is_int(value):
     try:
-        float(value)  
+        int(value)  
         return True   
     except ValueError:
         return False

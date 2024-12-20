@@ -25,7 +25,7 @@ int main(){
 
     std::string cardNum;
     int result =0;
-    std::cout<<"Enter a credit card number: \n";
+    std::cout<<"Enter a credit card number: ";
     std::getline(std::cin, cardNum);
 
     result = sumEvenDigits(cardNum) + sumOddDigits(cardNum);
@@ -40,7 +40,7 @@ int main(){
         std::cout<<"Your number: "<<cardNum<<" is not valid.\n";
         std::cout<<"--------------------------------------------------\n";
     }
-   std::cout << "Press Enter to close the program.\n";
+    std::cout << "Press Enter to close the program.\n";
     std::cin.ignore(); // Ignore leftover input
     std::cin.get(); // Waits for the user to press Enter
     return 0;
